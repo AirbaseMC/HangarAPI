@@ -1,12 +1,14 @@
 package net.laxwashere.spigot.authors;
 
+import java.util.Map;
+
 public class Author {
 
     private String id;
     private String username;
     private int resource_count;
 
-    private Identities identities;
+    private Map<String, String> identities;
     private String avatar;
 
     public String getId() {
@@ -21,7 +23,11 @@ public class Author {
         return resource_count;
     }
 
-    public Identities getIdentities() {
+    public String getIdentity(String service) {
+        return identities.get(service);
+    }
+
+    public Map<String, String> getAll() {
         return identities;
     }
 
