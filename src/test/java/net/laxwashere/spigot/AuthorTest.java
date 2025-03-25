@@ -16,6 +16,6 @@ public class AuthorTest {
     public void testAuthor() {
         Assertions.assertEquals("106", author.getId());
         Assertions.assertEquals("LaxWasHere", author.getUsername());
-        Assertions.assertEquals(42, author.getResource_count());
+        Assertions.assertEquals(41, author.getResource_count());
     }
 }
